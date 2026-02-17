@@ -15,6 +15,6 @@ export const SocialButton = ({ href, icon, label, className }: SocialButtonProps
         className={`${className} text-white px-5 py-2.5 rounded-full flex items-center gap-2 hover:opacity-90 transition-all shadow-md text-sm font-medium`}
     >
         {icon}
-        {label}
+        <span className="inline">{label}</span>
     </a>
 );

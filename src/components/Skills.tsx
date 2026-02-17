@@ -12,7 +12,7 @@ export default function Skills() {
                         {group.items.map((skill) => (
                             <span
                                 key={skill}
-                                className="bg-slate-50 border border-slate-200 text-slate-700 px-3 py-1.5 rounded-lg text-sm font-medium"
+                                className="bg-white border border-slate-200 text-slate-700 px-4 py-2 rounded-xl text-sm font-medium shadow-sm hover:shadow-md hover:border-blue-300 hover:-translate-y-1 transition-all duration-200 cursor-default"
                             >
                                 {skill}
                             </span>
