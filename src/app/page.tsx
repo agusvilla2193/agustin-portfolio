@@ -4,36 +4,22 @@ import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
-    /* bg-[#fefaf2] es el color "crema de libro" perfecto: cálido y sutil */
-    <main className="min-h-screen bg-[#fefaf2] text-slate-900 relative">
+    <main className="min-h-screen fondo-complejo-animado relative overflow-hidden">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 py-20 space-y-16">
 
-      {/* CAPA DE FONDO: Puntos sutiles en un tono café muy suave para que parezca papel */}
-      <div
-        className="absolute inset-0 z-0 opacity-[0.4] pointer-events-none"
-        style={{
-          backgroundImage: `radial-gradient(#d6d3d1 1px, transparent 1px)`,
-          backgroundSize: '32px 32px'
-        }}
-      ></div>
+        <section className="card-glass">
+          <Hero />
+        </section>
 
-      {/* CONTENIDO */}
-      <div className="relative z-10 max-w-4xl mx-auto px-6 py-20 space-y-32">
-
-        {/* 1. SECCIÓN HERO */}
-        <Hero />
-
-        {/* 2. SECCIÓN EXPERIENCIA & PROYECTOS */}
-        <section>
-          {/* Usamos border-stone-300/50 para que la línea sea sutil sobre el crema */}
-          <h2 className="text-3xl font-bold mb-12 tracking-tight text-blue-950 border-b border-stone-300/50 pb-4">
+        <section className="card-glass">
+          <h2 className="text-3xl font-bold mb-12 tracking-tight text-white border-b border-white/10 pb-4">
             Experiencia & Proyectos
           </h2>
           <Experience />
         </section>
 
-        {/* 3. SECCIÓN SKILLS */}
-        <section>
-          <h2 className="text-3xl font-bold mb-12 tracking-tight text-blue-950 border-b border-stone-300/50 pb-4">
+        <section className="card-glass">
+          <h2 className="text-3xl font-bold mb-12 tracking-tight text-white border-b border-white/10 pb-4">
             Habilidades Técnicas
           </h2>
           <Skills />
@@ -41,7 +27,7 @@ export default function Home() {
 
       </div>
 
-      <footer className="relative z-10 py-10 text-center text-slate-500 text-sm border-t border-stone-300/50">
+      <footer className="relative z-10 py-10 text-center text-slate-500 text-sm border-t border-white/5">
         © {new Date().getFullYear()} - Agustin Villafañe
       </footer>
     </main>
